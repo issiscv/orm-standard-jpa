@@ -15,20 +15,13 @@ public class JpaMain {
         tx.begin();//트랜잭션 시작
 
         try {
+            Member member = em.find(Member.class, 1L);
+            member.setUsername("김상운");
+            System.out.println("------------");
 
-            for (int i = 0; i < 10; i++) {
-                em.persist(new Member((long) i, "member" + i));
-            }
+            em.detach(member);
 
-            List<Member> members = em.createQuery("select m from Member m", Member.class)
-                    .getResultList();
-
-            for (Member member : members) {
-                System.out.println("member.getId() = " + member.getId());
-                System.out.println("member.getUsername() = " + member.getUsername());
-            }
-
-            tx.commit();//커밋
+            tx.commit();
         } catch (Exception e) {
             tx.rollback();
         } finally {
