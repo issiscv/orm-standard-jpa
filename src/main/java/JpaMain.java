@@ -1,10 +1,8 @@
-package jpa;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-import java.util.List;
 
 public class JpaMain {
     public static void main(String[] args) {
@@ -15,12 +13,6 @@ public class JpaMain {
         tx.begin();//트랜잭션 시작
 
         try {
-            Member member = em.find(Member.class, 1L);
-            member.setUsername("김상운");
-            System.out.println("------------");
-
-            em.detach(member);
-
             tx.commit();
         } catch (Exception e) {
             tx.rollback();

@@ -2,7 +2,10 @@
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              version="2.1">
     <persistence-unit name="hello">
-        <class>jpa.Member</class>
+        <class>domain.Member</class>
+        <class>domain.Order</class>
+        <class>domain.Item</class>
+        <class>domain.OrderItem</class>
         <properties>
             <!-- 필수 속성 -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
@@ -14,7 +17,7 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
 <!--            <property name="hibernate.use_sql_comments" value="true"/>-->
-            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
         </properties>
     </persistence-unit>
 </persistence>
