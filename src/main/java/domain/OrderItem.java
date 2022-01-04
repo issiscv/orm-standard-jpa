@@ -9,9 +9,13 @@ public class OrderItem {
     @Column(name = "order_item_id")
     private Long id;
 
-    private Long orderId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "order_id")
+    private Order order;
 
-    private Long memberId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "item_id")
+    private Item item;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
@@ -24,20 +28,20 @@ public class OrderItem {
         this.id = id;
     }
 
-    public Long getOrderId() {
-        return orderId;
+    public Order getOrder() {
+        return order;
     }
 
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
-    public Long getMemberId() {
-        return memberId;
+    public Item getItem() {
+        return item;
     }
 
-    public void setMemberId(Long memberId) {
-        this.memberId = memberId;
+    public void setItem(Item item) {
+        this.item = item;
     }
 
     public OrderStatus getOrderStatus() {
