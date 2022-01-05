@@ -1,7 +1,6 @@
 
-import domain.Member;
-import domain.Team;
-import domain.User;
+import domain.example.Team;
+import domain.example.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

@@ -1,4 +1,4 @@
-package domain;
+package domain.example;
 
 import javax.persistence.*;
 
@@ -37,6 +37,5 @@ public class User {
 
     public void setTeam(Team team) {
         this.team = team;
-        team.getUsers().add(this);
     }
 }

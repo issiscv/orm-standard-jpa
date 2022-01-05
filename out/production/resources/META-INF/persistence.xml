@@ -6,8 +6,8 @@
         <class>domain.Order</class>
         <class>domain.Item</class>
         <class>domain.OrderItem</class>
-        <class>domain.User</class>
-        <class>domain.Team</class>
+        <class>domain.example.User</class>
+        <class>domain.example.Team</class>
         <properties>
             <!-- 필수 속성 -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
