@@ -1,4 +1,4 @@
-package domain.example;
+package example;
 
 import javax.persistence.*;
 import java.util.ArrayList;

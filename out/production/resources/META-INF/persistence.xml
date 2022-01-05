@@ -5,7 +5,12 @@
         <class>domain.Member</class>
         <class>domain.Order</class>
         <class>domain.Item</class>
+        <class>domain.Album</class>
+        <class>domain.Movie</class>
+        <class>domain.Book</class>
         <class>domain.OrderItem</class>
+        <class>domain.Category</class>
+        <class>domain.Delivery</class>
         <class>domain.example.User</class>
         <class>domain.example.Team</class>
         <properties>

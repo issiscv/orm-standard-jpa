@@ -1,9 +1,12 @@
 package domain;
 
+import domain.item.Item;
+import domain.vo.OrderStatus;
+
 import javax.persistence.*;
 
 @Entity
-public class OrderItem {
+public class OrderItem extends BaseEntity{
 
     @Id @GeneratedValue
     @Column(name = "order_item_id")
