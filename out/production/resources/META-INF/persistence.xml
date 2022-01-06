@@ -4,15 +4,17 @@
     <persistence-unit name="hello">
         <class>domain.Member</class>
         <class>domain.Order</class>
-        <class>domain.Item</class>
-        <class>domain.Album</class>
-        <class>domain.Movie</class>
-        <class>domain.Book</class>
+        <class>domain.item.Item</class>
+        <class>domain.item.Album</class>
+        <class>domain.item.Movie</class>
+        <class>domain.item.Book</class>
         <class>domain.OrderItem</class>
         <class>domain.Category</class>
         <class>domain.Delivery</class>
-        <class>domain.example.User</class>
-        <class>domain.example.Team</class>
+        <class>example.User</class>
+        <class>example.Team</class>
+        <class>example.Child</class>
+        <class>example.Parent</class>
         <properties>
             <!-- 필수 속성 -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>

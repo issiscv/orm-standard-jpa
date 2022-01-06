@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f2c88e5-7d15-4e29-8a5e-9acf9d36ebc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/Parent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/jpa-basic.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/jpa.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/JpaMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Album.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Delivery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/DeliveryStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/OrderItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/OrderStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/example/Team.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/example/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/jpa/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/jpa/RoleType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/item/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/item/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/item/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/item/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/item/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/item/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/item/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/vo/DeliveryStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/vo/DeliveryStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/vo/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/vo/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpa/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpa/RoleType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="23JTWZCQ0coYJJWHSvImgOMaJWl" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunManager">
+    <configuration name="JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JpaMain" />
+      <module name="jpa-basic.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JpaMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f2c88e5-7d15-4e29-8a5e-9acf9d36ebc5" name="Default Changelist" comment="" />
+      <created>1641451228029</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641451228029</updated>
+      <workItem from="1641451231898" duration="2024000" />
+      <workItem from="1641455673136" duration="376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

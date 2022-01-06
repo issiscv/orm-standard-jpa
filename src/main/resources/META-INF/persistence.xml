@@ -2,17 +2,19 @@
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              version="2.1">
     <persistence-unit name="hello">
-        <class>domain.Member</class>
-        <class>domain.Order</class>
-        <class>domain.item.Item</class>
-        <class>domain.item.Album</class>
-        <class>domain.item.Movie</class>
-        <class>domain.item.Book</class>
-        <class>domain.OrderItem</class>
-        <class>domain.Category</class>
-        <class>domain.Delivery</class>
-        <class>example.User</class>
+        <class>entity.Category</class>
+        <class>entity.Delivery</class>
+        <class>entity.Member</class>
+        <class>entity.Order</class>
+        <class>entity.OrderItem</class>
+        <class>entity.item.Book</class>
+        <class>entity.item.Movie</class>
+        <class>entity.item.Album</class>
+        <class>example.Child</class>
+        <class>example.Parent</class>
         <class>example.Team</class>
+        <class>example.User</class>
+
         <properties>
             <!-- 필수 속성 -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
