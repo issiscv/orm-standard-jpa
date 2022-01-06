@@ -32,3 +32,154 @@
 2. 쓰기 지연 SQL 저장소의 쿼리를 데이터베이스에 전송한다.
 <br>
 ![flsu](https://user-images.githubusercontent.com/66157892/148165444-bde6fa47-2b69-4145-ba07-6c15cb2b566d.PNG)<br>
+
+## 엔티티 매핑
+#### 매핑 어노테이션
+- 객체와 테이블 매핑 : @Entity, @Table
+- 기본 키 매핑 : @Id
+- 필드와 컬럼 매핑 : @Column
+- 연관관계 매핑 : @ManyToOne, @JoinColumn
+
+### @Entity
+- JPA를 사용해서 테이블과 매핑할 클래스는 @Entity 어노테이션을 필수로 붙여야 한다.
+- 기본 생성자는 필수다(파라미터가 없는 public 또는 protected 생성자)
+- final 클래스, enum, interface, inner 클래스에는 사용할 수 없다.
+- 저장할 필드에 final을 사용하면 안 된다.
+
+### @Table
+- @Table은 엔티티와 매핑할 테이블을 지정한다. 생략하면 매핑한 엔티티 이름을 테이블 이름으로 사용한다.
+
+### 기본 키 매핑
+- 직접 할당 : em.persist()를 호출하기 전에 애플리케이션에서 직접 식별자 값을 할당해야 한다. 만약 식별자 값이 없으면 예외가 발생한다.
+- SEQUENCE : 데이터베이스 시퀀스에서 식별자 값을 획득한 후 영속성 컨텍스트에 저장한다.
+- TABLE : 데이터베이스 시퀀스 생성용 테이블에서 식별자 값을 획득한 후 영속성 컨텍스트에 저장한다.
+- IDENTITY : 데이터베이스에 엔티티를 저장해서 식별자 값을 획득한 후 영속성 컨텍스트에 저장한다. (IDENTITY 전략은 테이블에 데이터를 저장해야 식별자 값을 획득할 수 있다.)
+
+### 필드와 컬럼 매핑
+![매핑 어노테이션](https://user-images.githubusercontent.com/66157892/148383712-125e2293-6863-45c3-88aa-20f4efadc86f.PNG)<br>
+
+### @Column
+![column](https://user-images.githubusercontent.com/66157892/148383921-601e77fb-2b34-4e5a-90b1-01255ece6e2e.PNG)<br>
+
+## 연관관계 매핑 기초
+<b>객체를 테이블에 맞추어 데이터 중심으로 모델링하면, 협력 관계를 만들 수 없다</b>
+- 테이블은 외래 키로 조인을 사용해서 연관된 테이블을 찾는다.
+- 객체는 참조를 사용해서 연관된 객체를 찾는다.
+- 테이블과 객체 사이에는 이런 큰 간격이 있다.
+### 객체 연관관계와 테이블 연관관계의 가장 큰 차이
+- 참조를 통한 연관관계는 언제나 단방향이다. 객체간에 연관관계를 양방향으로 만들고 싶으면 반대쪽에도 필드를 추가해서 참조를 보관해야 한다. 하지만 정확히 이야기하면 이것은 양방향 관계가 아니라 서로 다른 단방향 관계 2개다.
+
+### 단방향 연관관계
+
+    @Entity
+    public class Member {
+        @Id
+        @Column(name = "MEMBER_ID")
+        private String id;
+        private String username;
+    
+        //연관관계 매핑
+        @ManyToOne
+        @JoinColumn(name="TEAM_ID")
+        private Team team;
+        
+        //연관관계 설정
+        public void setTeam(Team team) {
+            this.team = team;
+        }
+        //Getter, Setter ...
+    }
+
+    @Entity
+    public class Team {
+    @Id
+    @Column (name = "TEAM_ID")
+    private String id;
+    
+        private String name;
+        //Getter, Setter ...
+    }
+- @JoinColumn은 외래 키를 매핑할 때 사용한다.
+- @ManyToOne 어노테이션은 다대일 관계에서 사용한다.
+### 양방향 연관관계
+
+    @Entity
+    public class Member {
+        @Id
+        @Column (name = ”MEMBER_ID”)
+        private String id;
+        private String username;
+        
+        @ManyToOne
+        @JoinColumn(name="TEAM_ID H)
+        private Team team;
+        
+        //연관관계 :설정
+        public void setTeam(Team team) {
+        this.team = team;
+        }
+        //Getter, Setter ...  
+    }
+
+    @Entity
+    public class Team {
+        @Id
+        @Column(name = ”TEAM_ID”)
+        private String id;
+        
+        private String name;
+        
+        //==추가==//
+        @OneToMany (mappedBy = "team")
+        private List<Member> members = new ArrayList<Member> () ;
+        
+        ...
+    }
+
+### 연관관계의 주인
+<b>@OneToMany만 있으면 되지 mappedBy는 왜 필요할까?</b>
+- 객체에는 양방향 연관관계라는 것이 없다. 서로 다른 단방향 연관관계 2개를 애플리케이션 로직으로 잘 묶어서 양방향인 것처럼 보이게 할 뿐이다.
+- 연관관계의 주인은 외래 키가 있는 곳
+
+## 다양한 연관관계 매핑
+<b>연관관계 매핑 시 고려사항 3가지</b>
+- 다중성
+- 단방향, 양방향
+- 연관관계의 주인
+
+### 다대일(@ManyToOne)
+#### 다대일 단방향
+- 가장 많이 사용하는 연관관계
+- 다대일의 반대는 일대다
+#### 다대일 양방향
+- 외래 키가 있는 쪽이 연관관계의 주인
+- 양쪽을 서로 참조하도록 개발
+
+### 일대다(@OneToMany)
+#### 일대다 단방향
+- 일대다 단방향은 일대다(1:N)에서 일(1)이 연관관계의 주인
+- 테이블 일대다 관계는 항상 다(N) 쪽에 외래 키가 있음
+- 객체와 테이블의 차이 때문에 반대편 테이블의 외래 키를 관리하는 특이한 구조
+- @JoinColumn을 꼭 사용해야 함. 그렇지 않으면 조인 테이블 방식을 사용함(중간에 테이블을 하나 추가함)
+- 일대다 단방향 매핑의 단점
+- 엔티티가 관리하는 외래 키가 다른 테이블에 있음
+- 연관관계 관리를 위해 추가로 UPDATE SQL 실행
+- 일대다 단방향 매핑보다는 다대일 양방향 매핑을 사용하자
+
+#### 일대다 양방향
+- 이런 매핑은 공식적으로 존재X
+- @JoinColumn(insertable=false, updatable=false)
+- 읽기 전용 필드를 사용해서 양방향 처럼 사용하는 방법
+- 다대일 양방향을 사용하자
+
+### 일대일(@OneToOne)
+- 일대일 관계는 그 반대도 일대일
+- 주 테이블이나 대상 테이블 중에 외래 키 선택 가능
+- 다대일 양방향 매핑 처럼 외래 키가 있는 곳이 연관관계의 주인 
+- 반대편은 mappedBy 적용
+
+### 다대다(@ManyToMany)
+- 관계형 데이터베이스는 정규화된 테이블 2개로 다대다 관계를 표현할 수 없음
+- 연결 테이블을 추가해서 일대다, 다대일 관계로 풀어내야함
+- @JoinTable로 연결 테이블 지정
+- 다대다 매핑: 단방향, 양방향 가능

@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f2c88e5-7d15-4e29-8a5e-9acf9d36ebc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/vo/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/BaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Delivery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/OrderItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/item/Album.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/item/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/item/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/item/Movie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/vo/DeliveryStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/domain/vo/OrderStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jpa/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jpa/RoleType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Delivery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641451228029</updated>
       <workItem from="1641451231898" duration="2024000" />
-      <workItem from="1641455673136" duration="3866000" />
+      <workItem from="1641455673136" duration="7044000" />
     </task>
     <servers />
   </component>
